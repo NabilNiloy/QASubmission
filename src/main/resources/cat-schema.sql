@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS `cat` CASCADE;
+CREATE TABLE `cat` (
+	`id` BIGINT PRIMARY KEY AUTO_INCREMENT, 
+	`age` INTEGER CHECK (age<=18 AND age>=1), 
+	`fav_food` VARCHAR(255), 
+	`habitat` VARCHAR(255), 
+	`name` VARCHAR(255) NOT NULL UNIQUE
+);

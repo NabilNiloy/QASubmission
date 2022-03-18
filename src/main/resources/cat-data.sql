@@ -1,0 +1,1 @@
+INSERT INTO `cat`(age, fav_food, habitat, name) VALUES(7, 'tuna', 'domestic', 'Nemo');
