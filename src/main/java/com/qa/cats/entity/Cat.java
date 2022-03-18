@@ -114,10 +114,9 @@ public class Cat {
 	}
 
 
-	//more testing
 	@Override
 	public int hashCode() {
-		return Objects.hash(age, favFood, habitat, id, name);
+		return Objects.hash(age, favFood, habitat, name);
 	}
 
 
@@ -131,8 +130,15 @@ public class Cat {
 			return false;
 		Cat other = (Cat) obj;
 		return age == other.age && Objects.equals(favFood, other.favFood) && Objects.equals(habitat, other.habitat)
-				&& id == other.id && Objects.equals(name, other.name);
+				&& Objects.equals(name, other.name);
 	}
+
+
+	
+
+
+	
+
 
 
 

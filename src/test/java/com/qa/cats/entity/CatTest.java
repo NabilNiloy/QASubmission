@@ -6,7 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
+import org.springframework.boot.test.context.SpringBootTest;
 
+@SpringBootTest
 public class CatTest {
 
 	@Test
@@ -31,8 +33,8 @@ public class CatTest {
 		assertNotNull(cat.getFavFood());
 		assertNotNull(cat.getHabitat());
 		
-		assertEquals(cat.getAge(), 4);
 		assertEquals(cat.getId(), 1L);
+		assertEquals(cat.getAge(), 4);
 		assertEquals(cat.getName(), "Ford");
 		assertEquals(cat.getFavFood(), "milk");
 		assertEquals(cat.getHabitat(), "wild");
@@ -54,7 +56,7 @@ public class CatTest {
 		assertEquals(cat.getAge(), 6);
 		assertEquals(cat.getId(), 1L);
 		assertEquals(cat.getName(), "Boris");
-		assertEquals(cat.getFavFood(), "Sasages");
+		assertEquals(cat.getFavFood(), "Sausages");
 		assertEquals(cat.getHabitat(), "Democracy");
 	}
 	
